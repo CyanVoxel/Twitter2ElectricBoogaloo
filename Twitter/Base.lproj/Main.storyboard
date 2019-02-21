@@ -18,17 +18,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRF-uh-VgT">
-                                <rect key="frame" x="151" y="314" width="77" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="Login"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRF-uh-VgT">
+                                <rect key="frame" x="83.5" y="308" width="208" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="VRX-Wf-T7a"/>
+                                    <constraint firstAttribute="height" constant="51" id="fbW-WG-fGJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="64"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.21960784310000001" green="0.63137254899999995" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="onLoginButton:" destination="sdn-hh-yGN" eventType="touchUpInside" id="8oZ-UC-S4K"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.11372549019607843" green="0.15686274509803921" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="SRF-uh-VgT" firstAttribute="centerY" secondItem="kd4-Fr-wmc" secondAttribute="centerY" id="C9G-NJ-HJ6"/>
+                            <constraint firstItem="SRF-uh-VgT" firstAttribute="centerX" secondItem="kd4-Fr-wmc" secondAttribute="centerX" id="fC1-g2-tsG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="TAz-4K-V8H"/>
                     </view>
                     <connections>
@@ -37,12 +46,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TNj-mO-9z1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2" y="26"/>
+            <point key="canvasLocation" x="0.80000000000000004" y="25.637181409295355"/>
         </scene>
         <!--Home-->
         <scene sceneID="gFU-br-Rcr">
             <objects>
-                <tableViewController id="dNm-Pu-CHj" sceneMemberID="viewController">
+                <tableViewController id="dNm-Pu-CHj" customClass="HomeTableTableViewController" customModule="Twitter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="85Q-qU-OBT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,6 +73,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Home" id="Awj-1D-CUL">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="SHt-qZ-6Us">
+                            <color key="tintColor" red="0.21960784310000001" green="0.63137254899999995" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="onLogout:" destination="iMe-Lh-0AE" id="o1o-ct-SVz"/>
                             </connections>
@@ -82,6 +92,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lbW-8e-jFp">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.1137254902" green="0.15686274510000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.21960784310000001" green="0.63137254899999995" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="dNm-Pu-CHj" kind="relationship" relationship="rootViewController" id="6JI-sM-J2M"/>

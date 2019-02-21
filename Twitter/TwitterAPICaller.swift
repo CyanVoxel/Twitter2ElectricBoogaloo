@@ -6,6 +6,9 @@
 //  Copyright © 2019 Dan. All rights reserved.
 //
 
+//Backup consumerKey: "uFTmFW66AAMEUwx3rZlZDMSCf"
+//Backup consumerSecret: "LtlxIoQpBvHcqjpSMIA9Gs2E9wCJbr7xkx9EpSdBYoNedaZUgh"
+
 import UIKit
 import BDBOAuth1Manager
 
