@@ -65,22 +65,22 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1rT-bE-cdn">
-                                            <rect key="frame" x="16" y="11" width="60" height="60"/>
+                                            <rect key="frame" x="9" y="11" width="60" height="60"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="60" id="MRB-B2-Dq6"/>
                                                 <constraint firstAttribute="height" constant="100" id="nYo-mN-ib7"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ae-X5-oW2">
-                                            <rect key="frame" x="84" y="11" width="275" height="24"/>
+                                            <rect key="frame" x="77" y="11" width="275" height="24"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                             <color key="textColor" red="0.2196078431372549" green="0.63137254901960782" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tweet content" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9IE-Sb-dLu">
-                                            <rect key="frame" x="84" y="43" width="275" height="66"/>
+                                            <rect key="frame" x="77" y="37" width="275" height="72"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="66" id="DQ3-qt-PsS"/>
+                                                <constraint firstAttribute="height" constant="72" id="DQ3-qt-PsS"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -90,8 +90,7 @@
                                     <constraints>
                                         <constraint firstItem="9IE-Sb-dLu" firstAttribute="trailing" secondItem="8ae-X5-oW2" secondAttribute="trailing" id="4CB-2P-hXq"/>
                                         <constraint firstItem="1rT-bE-cdn" firstAttribute="top" secondItem="gZI-3u-kXp" secondAttribute="top" id="A9F-Hh-5K0"/>
-                                        <constraint firstItem="1rT-bE-cdn" firstAttribute="leading" secondItem="gZI-3u-kXp" secondAttribute="leading" id="FoO-zB-zNP"/>
-                                        <constraint firstItem="1rT-bE-cdn" firstAttribute="leading" secondItem="gZI-3u-kXp" secondAttribute="leadingMargin" constant="10" id="SpA-j5-CNW"/>
+                                        <constraint firstItem="1rT-bE-cdn" firstAttribute="leading" secondItem="gZI-3u-kXp" secondAttribute="leadingMargin" constant="5" id="SpA-j5-CNW"/>
                                         <constraint firstItem="9IE-Sb-dLu" firstAttribute="leading" secondItem="1rT-bE-cdn" secondAttribute="trailing" constant="8" symbolic="YES" id="UFV-bJ-kLN"/>
                                         <constraint firstItem="8ae-X5-oW2" firstAttribute="leading" secondItem="1rT-bE-cdn" secondAttribute="trailing" constant="8" symbolic="YES" id="a8F-mt-PwO"/>
                                         <constraint firstItem="8ae-X5-oW2" firstAttribute="top" secondItem="gZI-3u-kXp" secondAttribute="topMargin" constant="10" id="cZQ-vP-s4E"/>
@@ -101,6 +100,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.11372549019607843" green="0.15686274509803921" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                 <connections>
                                     <outlet property="profileImageView" destination="1rT-bE-cdn" id="61s-Af-Pl0"/>
                                     <outlet property="tweetContentLabel" destination="9IE-Sb-dLu" id="ZJP-h5-fWk"/>
