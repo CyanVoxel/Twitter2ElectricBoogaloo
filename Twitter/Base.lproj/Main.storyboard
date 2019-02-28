@@ -129,6 +129,7 @@
                                 <connections>
                                     <outlet property="favButton" destination="dIg-Wj-n2H" id="REH-2e-hRE"/>
                                     <outlet property="profileImageView" destination="1rT-bE-cdn" id="61s-Af-Pl0"/>
+                                    <outlet property="retweetButton" destination="u31-An-ofG" id="jql-Cc-1OZ"/>
                                     <outlet property="tweetContentLabel" destination="9IE-Sb-dLu" id="ZJP-h5-fWk"/>
                                     <outlet property="userNameLabel" destination="8ae-X5-oW2" id="QlL-EF-qdo"/>
                                 </connections>
