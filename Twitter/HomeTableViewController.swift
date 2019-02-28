@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeTableTableViewController: UITableViewController {
+class HomeTableViewController: UITableViewController {
 
     var tweetArray = [NSDictionary]()
     var numberOfTweet: Int!
@@ -20,7 +20,12 @@ class HomeTableTableViewController: UITableViewController {
         loadTweets()
         myRefreshControl.addTarget(self, action: #selector(loadTweets), for: .valueChanged)
         tableView.refreshControl = myRefreshControl
-    } //viewDidLoat()
+    } //viewDidLoad()
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.loadTweets()
+    }
     
     @objc func loadTweets() {
         
@@ -100,6 +105,8 @@ class HomeTableTableViewController: UITableViewController {
             cell.profileImageView.image = UIImage(data: imageData)
         }
         
+        cell.setFavorite(tweetArray[indexPath.row]["favorited"] as! Bool)
+        cell.tweetId = tweetArray[indexPath.row]["id"] as! Int
         
         return cell
     }
