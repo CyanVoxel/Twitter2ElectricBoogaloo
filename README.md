@@ -25,6 +25,8 @@ The following **other** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
+*Note: I had to wiggle the screen a bit to refresh the icons due the poor performance of the VM I was recording this on. This does not show up in the app itself.*
+
 <img src="twitter2part2demo.gif" width=250><br>
 
 # Project 3 - *Twitter 2: Electric Boogaloo*
